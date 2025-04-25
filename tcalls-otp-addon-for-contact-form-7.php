@@ -1,19 +1,15 @@
 <?php
-
 /**
  * Plugin Name: Tcalls OTP addon for Contact Form 7
- * Plugin URI: https://wordpress.org/plugins/tcalls-otp/
- * Description: Tcalls is a WordPress plugin that integrates with the popular Contact Form 7 plugin to enhance form security by adding OTP (One-Time Password) validation via WA..
+ * Plugin URI: https://tcalls.com/to-download/
+ * Description: Tcalls is a WordPress plugin that integrates with the popular Contact Form 7 plugin to enhance form security by adding OTP (One-Time Password) validation via WhatsApp..
  * Version: 1.0.0
- * Author: Omar Al Noori 
- * Author URI: https://www.linkedin.com/in/omaralnoori/
+ * Author: Tcalls Team
+ * Author URI: https://tcalls.com/author/?utm_source=sl_plugin_author
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain: tcalls-otp-addon-for-contact-form-7
- * Domain Path: /languages
- * Requires Plugins: contact-form-7
+ * Text Domain: Tcalls-Whatsapp-OTP-CF7
  */
-
 
 if (! defined('ABSPATH')) {
 	exit;
@@ -22,7 +18,7 @@ if (! defined('ABSPATH')) {
 /*
  * Class Tcalls_Addon_CF7
  */
-class Tcalls_WA_OTP_CF7
+class Tcalls_WhatsApp_OTP_CF7
 {
 
 	/*
@@ -346,11 +342,7 @@ class Tcalls_WA_OTP_CF7
 ?>
 		<div class="notice notice-error">
 			<p>
-				<?php
-
-				/* translators: 1: Plugin name, 2: Required plugin name, 3: Link to install page.*/
-
-				printf(
+				<?php printf(
 					__('%1$s requires %2$s to be installed and active. You can install and activate it from %3$s', 'tcalls-otp-addon-for-contact-form-7'),
 					'<strong>Tcalls OTP Addon for Contact Form 7</strong>',
 					'<strong>Contact form 7</strong>',
@@ -446,6 +438,6 @@ class Tcalls_WA_OTP_CF7
 }
 
 /*
- * Object - Tcalls_WA_OTP_CF7
+ * Object - Tcalls_WhatsApp_OTP_CF7
  */
-$Tcalls_addons_cf7 = new Tcalls_WA_OTP_CF7();
+$Tcalls_addons_cf7 = new Tcalls_WhatsApp_OTP_CF7();
